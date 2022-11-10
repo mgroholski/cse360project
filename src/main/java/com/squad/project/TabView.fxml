@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.squad.project.TabViewController">
+    <children>
+        <TabPane layoutX="-2.0" prefHeight="800.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab fx:id="studentTab" text="Student Tab">
+                    <fx:include fx:id="StudentTab" source="studentTab/StudentTab.fxml"/>
+                </Tab>
+                <Tab fx:id="orderStatusTab" text="Order Status Tab">
+                    <fx:include fx:id="OrderStatusTab" source="orderStatusTab/OrderStatusTab.fxml"/>
+                </Tab>
+                <Tab fx:id="orderProcessorTab" text="Order Processor Tab">
+                    <fx:include fx:id="OrderStatusTab" source="orderStatusTab/OrderStatusTab.fxml"/>
+                </Tab>
+                <Tab fx:id="pizzaChefTab" text="Pizza Chef Tab">
+                    <fx:include fx:id="PizzaChefTab" source="pizzaChefTab/PizzaChefTab.fxml"/>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>
