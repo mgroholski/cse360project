@@ -15,6 +15,8 @@ public class StudentDTO{
 
     private List<OrderDTO> orders;
 
+    private String email;
+
     @Override
     public String toString() {
         //TODO

@@ -17,7 +17,7 @@ public class Order{
     private List<Pizza> pizzas;
 
     //TODO: Status
-
+    private String status;
     @Override
     public String toString() {
         //TODO

@@ -17,6 +17,8 @@ public class Student{
     @OneToMany()
     private List<Order> orders;
 
+    private String email;
+
     @Override
     public String toString() {
         //TODO
