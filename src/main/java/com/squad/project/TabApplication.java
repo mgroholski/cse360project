@@ -24,8 +24,7 @@ public class TabApplication extends Application{
 
         Scene scene = new Scene(root);
 
-        stage.setTitle("View tasks");
-
+        stage.setTitle("Welcome to SunDevil Pizza");
         stage.setScene(scene);
         stage.show();
     }

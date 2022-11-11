@@ -1,4 +1,4 @@
-package com.squad.project.studentTab;
+package com.squad.project.view.studentTab;
 
 public class StudentTabController {
     public void init() {}

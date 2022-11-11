@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.squad.project.view.studentTab.StudentTabController">
+   <children>
+      <Label alignment="CENTER_RIGHT" layoutX="78.0" layoutY="125.0" prefHeight="37.0" prefWidth="232.0" text="Choose pizza type">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="78.0" layoutY="350.0" prefHeight="36.0" prefWidth="277.0" text="Choose your toppings">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="cheese" layoutX="111.0" layoutY="180.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="200.0" text="Cheese">
+         <font>
+            <Font size="30.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="PizzaType" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="vegetable" layoutX="111.0" layoutY="230.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="200.0" text="Vegetable">
+         <toggleGroup>
+            <ToggleGroup fx:id="PizzaType" />
+         </toggleGroup>
+         <font>
+            <Font size="30.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="pepperoni" layoutX="111.0" layoutY="280.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="200.0" text="Pepperoni">
+         <toggleGroup>
+            <ToggleGroup fx:id="PizzaType" />
+         </toggleGroup>
+         <font>
+            <Font size="30.0" />
+         </font>
+      </RadioButton>
+      <CheckBox fx:id="mushrooms" layoutX="111.0" layoutY="405.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="225.0" text="Mushrooms">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="onions" layoutX="111.0" layoutY="455.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="225.0" text="Onions">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="olives" layoutX="111.0" layoutY="505.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="225.0" text="Olives">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="extraCheese" layoutX="111.0" layoutY="555.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="225.0" text="Extra Cheese">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="addPizza" layoutX="125.0" layoutY="649.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Add Pizza">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="placeOrder" layoutX="500.0" layoutY="650.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Place Order">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="519.0" layoutY="123.0" prefHeight="36.0" prefWidth="172.0" text="Pizzas In Cart">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="removePizza" layoutX="500.0" layoutY="525.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Remove Pizza">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

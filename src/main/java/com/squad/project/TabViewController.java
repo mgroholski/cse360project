@@ -3,10 +3,11 @@ package com.squad.project;
 import javafx.fxml.FXML;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
-import com.squad.project.studentTab.StudentTabController;
-import com.squad.project.orderStatusTab.OrderStatusTabController;
-import com.squad.project.orderProcessorTab.OrderProcessorTabController;
-import com.squad.project.pizzaChefTab.PizzaChefTabController;
+
+import com.squad.project.view.orderProcessorTab.OrderProcessorTabController;
+import com.squad.project.view.orderStatusTab.OrderStatusTabController;
+import com.squad.project.view.pizzaChefTab.PizzaChefTabController;
+import com.squad.project.view.studentTab.StudentTabController;
 
 public class TabViewController {
     @FXML

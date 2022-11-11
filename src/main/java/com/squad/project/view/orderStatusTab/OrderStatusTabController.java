@@ -1,4 +1,4 @@
-package com.squad.project.orderStatusTab;
+package com.squad.project.view.orderStatusTab;
 
 public class OrderStatusTabController {
     public void init() {}
