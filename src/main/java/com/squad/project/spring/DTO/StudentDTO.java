@@ -5,17 +5,19 @@ import java.util.Objects;
 import java.util.List;
 import lombok.Data;
 
-import com.squad.project.spring.DTO.*;
-
 @Data
 public class StudentDTO{
     private Long id;
 
-    private String name;
-
     private List<OrderDTO> orders;
 
     private String email;
+
+    private String permissions;
+
+    public StudentDTO(long id) {
+        this.id = id;
+    }
 
     @Override
     public String toString() {

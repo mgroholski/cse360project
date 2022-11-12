@@ -11,11 +11,18 @@ import com.squad.project.spring.DTO.*;
 public class PizzaDTO{
     private Long id;
 
-    private List<String> piztTopList;
+    private List<String> pizzaTopList;
 
-    private String pizType;
+    private String pizzaType;
 
     private double cost;
+
+    public PizzaDTO(List<String> pizzaTopList, String pizzaType, double cost) {
+        this.pizzaTopList = pizzaTopList;
+        this.pizzaType = pizzaType;
+        this.cost = cost;
+    }
+
 
     @Override
     public String toString() 

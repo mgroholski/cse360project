@@ -13,6 +13,14 @@ public class OrderDTO{
 
     private List<PizzaDTO> pizzas;
 
+    private String status;
+
+    public OrderDTO(List<PizzaDTO> pizzas, String status)
+    {
+        this.pizzas = pizzas;
+        this.status = status;
+    }
+
     @Override
     public String toString() {
         //TODO
