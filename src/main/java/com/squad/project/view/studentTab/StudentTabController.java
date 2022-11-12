@@ -4,12 +4,14 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.RadioButton;
+import javafx.scene.control.ToggleGroup;
 
 public class StudentTabController {
 
     @FXML private RadioButton cheese;
     @FXML private RadioButton vegatable;
     @FXML private RadioButton pepperoni;
+    @FXML private ToggleGroup pizzaType;
     @FXML private CheckBox mushrooms;
     @FXML private CheckBox onions;
     @FXML private CheckBox olives;
@@ -18,5 +20,8 @@ public class StudentTabController {
     @FXML private Button placeOrder;
     @FXML  private Button removePizza;
     
-    public void init() {}
+    public void init() {
+        pizzaType.getSelectedToggle();
+        
+    }
 }
