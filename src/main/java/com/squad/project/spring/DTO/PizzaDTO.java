@@ -8,7 +8,7 @@ import lombok.Data;
 import com.squad.project.spring.DTO.*;
 
 @Data
-public class PizzaDTO{
+public class PizzaDTO {
     private Long id;
 
     private List<String> pizzaTopList;
@@ -23,11 +23,10 @@ public class PizzaDTO{
         this.cost = cost;
     }
 
-
     @Override
-    public String toString() 
-    {
-        //TODO
-        return "";
+    public String toString() {
+        // TODO
+        return "PizzaDTO [id=" + id + ", pizzaTopList=" + pizzaTopList + ", pizzaType=" + pizzaType + ", cost=" + cost
+                + "]";
     }
 }
