@@ -4,8 +4,6 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class OrderStatusTabController {
-    
-    @Override
     public void initialize(URL location, ResourceBundle resources) {
 
     }

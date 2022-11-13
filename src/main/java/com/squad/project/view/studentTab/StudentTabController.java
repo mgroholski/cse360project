@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import com.squad.project.spring.DTO.*;
+//import com.squad.project.spring.DTO.*;
 
 public class StudentTabController implements Initializable{
 
@@ -39,27 +39,27 @@ public class StudentTabController implements Initializable{
     public 
     FXMLLoader loader = new FXMLLoader();
 
-    pizzaType.getSelectedToggle();
+    //pizzaType.getSelectedToggle();
 
-    String pizzaType = "PPI";
-    ArrayList<String> toppings = new ArrayList();
-    double cost = 40.00;
+    //String pizzaType = "PPI";
+//    ArrayList<String> toppings = new ArrayList();
+//    double cost = 40.00;
 
-    PizzaDTO pizza = new PizzaDTO(toppings, pizzaType, cost);
+    //PizzaDTO pizza = new PizzaDTO(toppings, pizzaType, cost);
     //bool createPizza(PizzaDTO pizza)
 
     long id = 1218442420;
-    StudentDTO matthew = new StudentDTO(id);
+    //StudentDTO matthew = new StudentDTO(id);
     //StudentDTO login(StudentDTO student)
     //If null bad login
     //Else returns studentDTO
 
     //Gets all orders under student
-    for(OrderDTO order: matthew.getOrders()) {
-        System.out.println(order.toString());
-
-        for (PizzaDTO za: order.getPizzas()) {
-            System.out.println(za.toString());
-        }
-    }
+//    for(OrderDTO order: matthew.getOrders()) {
+//        System.out.println(order.toString());
+//
+//        for (PizzaDTO za: order.getPizzas()) {
+//            System.out.println(za.toString());
+//        }
+//    }
 }
