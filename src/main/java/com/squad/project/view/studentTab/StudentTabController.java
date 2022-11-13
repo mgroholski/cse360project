@@ -5,13 +5,19 @@ import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
+import javafx.scene.layout.AnchorPane;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 
+import java.io.IOException;
 import java.util.ArrayList;
+
+import java.net.URL;
+import java.util.ResourceBundle;
 
 import com.squad.project.spring.DTO.*;
 
-public class StudentTabController {
+public class StudentTabController implements Initializable{
 
     @FXML private RadioButton cheese;
     @FXML private RadioButton vegatable;
@@ -25,31 +31,35 @@ public class StudentTabController {
     @FXML private Button placeOrder;
     @FXML private Button removePizza;
     
-    public void init() {
-        FXMLLoader loader = new FXMLLoader();
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
 
-        pizzaType.getSelectedToggle();
+    }
 
-        String pizzaType = "PPI";
-        ArrayList<String> toppings = new ArrayList();
-        double cost = 40.00;
+    public 
+    FXMLLoader loader = new FXMLLoader();
 
-        PizzaDTO pizza = new PizzaDTO(toppings, pizzaType, cost);
-        //bool createPizza(PizzaDTO pizza)
+    pizzaType.getSelectedToggle();
 
-        long id = 1218442420;
-        StudentDTO matthew = new StudentDTO(id);
-        //StudentDTO login(StudentDTO student)
-        //If null bad login
-        //Else returns studentDTO
+    String pizzaType = "PPI";
+    ArrayList<String> toppings = new ArrayList();
+    double cost = 40.00;
 
-        //Gets all orders under student
-        for(OrderDTO order: matthew.getOrders()) {
-            System.out.println(order.toString());
+    PizzaDTO pizza = new PizzaDTO(toppings, pizzaType, cost);
+    //bool createPizza(PizzaDTO pizza)
 
-            for (PizzaDTO za: order.getPizzas()) {
-                System.out.println(za.toString());
-            }
+    long id = 1218442420;
+    StudentDTO matthew = new StudentDTO(id);
+    //StudentDTO login(StudentDTO student)
+    //If null bad login
+    //Else returns studentDTO
+
+    //Gets all orders under student
+    for(OrderDTO order: matthew.getOrders()) {
+        System.out.println(order.toString());
+
+        for (PizzaDTO za: order.getPizzas()) {
+            System.out.println(za.toString());
         }
     }
 }

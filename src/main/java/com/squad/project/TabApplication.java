@@ -9,23 +9,14 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class TabApplication extends Application{
+    
     @Override
-    public void start(Stage stage) throws Exception {
-        FXMLLoader loader = new FXMLLoader();
+    public void start(Stage primaryStage) throws Exception {
 
-        loader.setLocation(getClass().getResource("TabView.fxml"));
-        Parent root = null;
-        try {
-            root = loader.load();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        TabViewController view = loader.getController();
-
+        Parent root = FXMLLoader.load(getClass().getResource("TabView.fxml"));
         Scene scene = new Scene(root);
-
-        stage.setTitle("Welcome to SunDevil Pizza");
-        stage.setScene(scene);
-        stage.show();
+        primaryStage.setTitle("Welcome to SunDevil Pizza");
+        primaryStage.setScene(scene);
+        primaryStage.show();
     }
 }

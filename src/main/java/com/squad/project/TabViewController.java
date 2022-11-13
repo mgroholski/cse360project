@@ -1,29 +1,69 @@
 package com.squad.project;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
+import javafx.scene.layout.AnchorPane;
+
+import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 import com.squad.project.view.orderProcessorTab.OrderProcessorTabController;
 import com.squad.project.view.orderStatusTab.OrderStatusTabController;
 import com.squad.project.view.pizzaChefTab.PizzaChefTabController;
 import com.squad.project.view.studentTab.StudentTabController;
 
-public class TabViewController {
-    @FXML private TabPane tabPane;
-    @FXML private Tab studentTab;
-    @FXML private Tab orderStatusTab;
-    @FXML private Tab orderProcessorTab;
-    @FXML private Tab pizzaChefTab;
-    @FXML private StudentTabController studentTabController;
-    @FXML private OrderStatusTabController orderStatusTabController;
-    @FXML private OrderProcessorTabController orderProcessorTabController;
-    @FXML private PizzaChefTabController pizzaChefTabController;
-    
-    public void init() {
-        studentTabController.init();
-        orderStatusTabController.init();
-        orderProcessorTabController.init();
-        pizzaChefTabController.init();
+public class TabViewController implements Initializable {
+    @FXML TabPane tabPane;
+    @FXML Tab studentTab;
+    @FXML Tab orderStatusTab;
+    @FXML Tab orderProcessorTab;
+    @FXML Tab pizzaChefTab;
+    @FXML StudentTabController studentTabController;
+    @FXML OrderStatusTabController orderStatusTabController;
+    @FXML OrderProcessorTabController orderProcessorTabController;
+    @FXML PizzaChefTabController pizzaChefTabController;
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        
+        FXMLLoader loader = new FXMLLoader();
+        try {
+            AnchorPane studentPane = FXMLLoader.load(getClass().getResource("StudentTab.fxml"));
+            studentTab.setContent(studentPane);
+        }
+        catch (IOException e) {
+            System.out.println("File not found");
+        }
+
+        loader = new FXMLLoader();
+        try {
+            AnchorPane orderStatusPane = FXMLLoader.load(getClass().getResource("StudentTab.fxml"));
+            orderStatusTab.setContent(orderStatusPane);
+        }
+        catch (IOException e) {
+            System.out.println("File not found");
+        }
+
+        loader = new FXMLLoader();
+        try {
+            AnchorPane orderProcessorPane = FXMLLoader.load(getClass().getResource("StudentTab.fxml"));
+            orderProcessorTab.setContent(orderProcessorPane);
+        }
+        catch (IOException e) {
+            System.out.println("File not found");
+        }
+
+        loader = new FXMLLoader();
+        try {
+            AnchorPane pizzaChefPane = FXMLLoader.load(getClass().getResource("StudentTab.fxml"));
+            pizzaChefTab.setContent(pizzaChefPane);
+        }
+        catch (IOException e) {
+            System.out.println("File not found");
+        }
     }
 }

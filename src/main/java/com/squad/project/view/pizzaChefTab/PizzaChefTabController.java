@@ -1,6 +1,15 @@
 package com.squad.project.view.pizzaChefTab;
 
+import java.net.URL;
+import java.util.ResourceBundle;
+
 public class PizzaChefTabController {
+    
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+
+    }
+    
     public void init() {
         //Clicks studentTab
 
