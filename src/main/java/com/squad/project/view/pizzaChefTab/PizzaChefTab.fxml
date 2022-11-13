@@ -6,6 +6,17 @@
 
 <AnchorPane prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.squad.project.view.pizzaChefTab.PizzaChefTabController">
    <children>
-      
+      <ListView fx:id="readyToCookList" layoutX="25.0" layoutY="25.0" prefHeight="300.0" prefWidth="750.0" />
+      <ListView fx:id="cookingList" layoutX="25.0" layoutY="425.0" prefHeight="300.0" prefWidth="750.0" />
+      <Button fx:id="cookBtn" alignment="CENTER" layoutX="150.0" layoutY="340.0" mnemonicParsing="false" onAction="#updateCooking" prefHeight="50.0" prefWidth="500.0" text="Change status to COOKING">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="readyBtn" alignment="CENTER" layoutX="150.0" layoutY="740.0" mnemonicParsing="false" onAction="#updateReady" prefHeight="50.0" prefWidth="500.0" text="Change status to READY">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

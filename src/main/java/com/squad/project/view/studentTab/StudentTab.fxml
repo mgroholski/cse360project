@@ -10,6 +10,7 @@
 
 <AnchorPane prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.squad.project.view.studentTab.StudentTabController">
    <children>
+      <ListView fx:id="studentPizzas" layoutX="420.0" layoutY="175.0" prefHeight="375.0" prefWidth="350.0" />
       <Label alignment="CENTER_RIGHT" layoutX="78.0" layoutY="125.0" prefHeight="37.0" prefWidth="232.0" text="Choose pizza type">
          <font>
             <Font size="30.0" />
@@ -74,12 +75,12 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </Button>
-      <Label alignment="CENTER" layoutX="519.0" layoutY="123.0" prefHeight="36.0" prefWidth="172.0" text="Pizzas In Cart">
+      <Label alignment="CENTER" layoutX="500.0" layoutY="120.0" prefHeight="50.0" prefWidth="200.0" text="Pizzas In Cart">
          <font>
             <Font size="30.0" />
          </font>
       </Label>
-      <Button fx:id="removePizza" layoutX="500.0" layoutY="525.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Remove Pizza">
+      <Button fx:id="removePizza" layoutX="500.0" layoutY="575.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Remove Pizza">
          <font>
             <Font size="24.0" />
          </font>

@@ -50,14 +50,30 @@ public class StudentTabController implements Initializable{
 
     long id = 1218442420;
 
-    //choose topping  
-    cheese.setOnAction(e -> pizzaType = "cheese");
+    //choose topping
+    cheese.setOnAction(e -> pizzaType = "asd");
     pepperoni.setOnAction(e -> pizzaType = "pepperoni");
     vegatable.setOnAction(e -> pizzaType = "vegatable");
 
-    //boolean isSelected1
+    if(mushrooms.isSelected()){
+        toppings.add("mushrooms");
+    }
+    if(onions.isSelected()){
+        toppings.add("onions");
+    }
+    if(olives.isSelected()){
+        toppings.add("olives");
+    }
+    if(extraCheese.isSelected()){
+        toppings.add("extraCheese");
+    }
+
+    pizza.pizzaType=pizzaType;
+    
 
     //addPizza.setOnAction();
+
+
 
 
 
