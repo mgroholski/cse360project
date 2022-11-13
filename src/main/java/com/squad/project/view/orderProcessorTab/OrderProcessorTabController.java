@@ -12,8 +12,7 @@ import javafx.scene.input.MouseEvent;
 public class OrderProcessorTabController {
     
     @FXML ListView<Order> acceptedList;
-    
-    @Override
+
     public void initialize(URL location, ResourceBundle resources) {
         //TODO add all orders with status ACCEPTED to ListView acceptedList
 

@@ -11,7 +11,6 @@ public class PizzaChefTabController {
     @FXML ListView readyToCookList;
     @FXML ListView cookingList;
 
-    @Override
     public void initialize(URL location, ResourceBundle resources) {
         //TODO add all orders with status  to ListView readyToCookList
     }
@@ -34,9 +33,6 @@ public class PizzaChefTabController {
 
         //Ready to cook
         //OrderDTO changeStatus(long orderId, String status)
-        OrderDTO changeStatus(long orderId, String status) {
-            
-        }
         //status = "Ready"
         
         //Finish order

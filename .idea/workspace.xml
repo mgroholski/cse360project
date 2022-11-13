@@ -4,39 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5090ef63-2a19-4409-8075-7c1e1fa71375" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/SpringApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/StageInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5090ef63-2a19-4409-8075-7c1e1fa71375" name="Changes" comment="Merged database w/ main">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Enum/OrderStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Enum/PizzaTopping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Enum/PizzaType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Enum/UserRole.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/RunApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/RunApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/TabApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/TabApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/TabView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/squad/project/TabView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/TabViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/TabViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Classes/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Classes/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Classes/Pizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Classes/Pizza.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Classes/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Classes/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/DTO/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/DTO/OrderDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/DTO/PizzaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/DTO/PizzaDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/DTO/StudentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/DTO/StudentDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/MainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/MainService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Order.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Repositories/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Repositories/OrderRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Repositories/PizzaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Repositories/PizzaRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Repositories/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Repositories/StudentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/view/orderProcessorTab/OrderProcessorTab.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/squad/project/OrderProcessorTab.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/view/opLoginPage/OPLoginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/squad/project/OPLoginPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/view/opLoginPage/OPLoginPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/view/opLoginPage/OPLoginPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/view/orderProcessorTab/OrderProcessorTabController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/view/orderProcessorTab/OrderProcessorTabController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/view/orderStatusTab/OrderStatusTab.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/squad/project/OrderStatusTab.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/view/orderStatusTab/OrderStatusTabController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/view/orderStatusTab/OrderStatusTabController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/view/pizzaChefTab/PizzaChefTab.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/squad/project/PizzaChefTab.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/view/pcLoginPage/PCLoginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/squad/project/PCLoginPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/view/pcLoginPage/PCLoginPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/view/pcLoginPage/PCLoginPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/view/pizzaChefTab/PizzaChefTabController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/view/pizzaChefTab/PizzaChefTabController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/view/studentTab/StudentTab.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/squad/project/StudentTab.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/view/studentTab/StudentTabController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/view/studentTab/StudentTabController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/squad/project/OrderProcessorTab.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/squad/project/OrderProcessorTab.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/squad/project/OrderStatusTab.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/squad/project/OrderStatusTab.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/squad/project/PizzaChefTab.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/squad/project/PizzaChefTab.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/squad/project/StudentTab.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/squad/project/StudentTab.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,11 +43,20 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="database" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -62,24 +67,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/mattgroholski/Documents/My Documents/School/College/2022-2023/CSE360/cse360project",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mattgroholski/Documents/My Documents/School/College/2022-2023/CSE360/cse360project&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;6631973b9229f1e93c62282012033902&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/com/squad/project" />
@@ -113,10 +119,45 @@
       <updated>1666581205768</updated>
       <workItem from="1666581208511" duration="2000" />
       <workItem from="1668309064274" duration="6880000" />
+      <workItem from="1668359893193" duration="5722000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/squad/project/spring/Classes/Student.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

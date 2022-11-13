@@ -12,7 +12,6 @@ public class OrderStatusTabController {
     
     @FXML ListView<Student> allOrderList;
 
-    @Override
     public void initialize(URL location, ResourceBundle resources) {
         
     }
