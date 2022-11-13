@@ -5,11 +5,13 @@ import java.util.Collection;
 
 import com.squad.project.spring.Enum.PizzaTopping;
 import com.squad.project.spring.Enum.PizzaType;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
 @Table(name = "PIZZA_TABLE")
-@Data
+@Getter
+@Setter
 public class Pizza{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

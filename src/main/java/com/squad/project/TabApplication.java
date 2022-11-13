@@ -23,11 +23,10 @@ public class TabApplication extends Application{
 
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/squad/project/TabView.fxml")));
 
-
         Scene scene = new Scene(root);
         primaryStage.setTitle("Welcome to SunDevil Pizza");
         primaryStage.setScene(scene);
-        primaryStage.show();
+        applicationContext.publishEvent(new StageReadyEvent(primaryStage));
     }
 
     @Override

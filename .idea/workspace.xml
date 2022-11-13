@@ -4,35 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5090ef63-2a19-4409-8075-7c1e1fa71375" name="Changes" comment="Merged database w/ main">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Enum/OrderStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Enum/PizzaTopping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Enum/PizzaType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Enum/UserRole.java" afterDir="false" />
+    <list default="true" id="5090ef63-2a19-4409-8075-7c1e1fa71375" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/TabViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/TabViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Classes/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Classes/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/TabApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/TabApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Classes/Pizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Classes/Pizza.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Classes/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Classes/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/DTO/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/DTO/OrderDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/DTO/PizzaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/DTO/PizzaDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/DTO/StudentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/DTO/StudentDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Repositories/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Repositories/OrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Repositories/PizzaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Repositories/PizzaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Repositories/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Repositories/StudentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/view/opLoginPage/OPLoginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/squad/project/OPLoginPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/view/opLoginPage/OPLoginPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/view/opLoginPage/OPLoginPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/view/orderProcessorTab/OrderProcessorTabController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/view/orderProcessorTab/OrderProcessorTabController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/view/orderStatusTab/OrderStatusTabController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/view/orderStatusTab/OrderStatusTabController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/view/pcLoginPage/PCLoginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/squad/project/PCLoginPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/view/pcLoginPage/PCLoginPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/view/pcLoginPage/PCLoginPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/view/pizzaChefTab/PizzaChefTabController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/view/pizzaChefTab/PizzaChefTabController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/view/studentTab/StudentTabController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/view/studentTab/StudentTabController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/squad/project/OrderProcessorTab.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/squad/project/OrderProcessorTab.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/squad/project/OrderStatusTab.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/squad/project/OrderStatusTab.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/squad/project/PizzaChefTab.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/squad/project/PizzaChefTab.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/squad/project/StudentTab.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/squad/project/StudentTab.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,8 +98,16 @@
       <updated>1666581205768</updated>
       <workItem from="1666581208511" duration="2000" />
       <workItem from="1668309064274" duration="6880000" />
-      <workItem from="1668359893193" duration="5722000" />
+      <workItem from="1668359893193" duration="6715000" />
     </task>
+    <task id="LOCAL-00001" summary="Remade classes">
+      <created>1668366100291</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668366100291</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,15 +136,8 @@
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/squad/project/spring/Classes/Student.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Remade classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remade classes" />
   </component>
 </project>
