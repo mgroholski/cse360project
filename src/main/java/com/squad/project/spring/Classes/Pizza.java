@@ -12,9 +12,9 @@
 //    @GeneratedValue(strategy = GenerationType.IDENTITY)
 //    private Long id;
 //
-//    private List<String> piztTopList;
+//    private List<String> pizzaTopList;
 //
-//    private String pizType;
+//    private String pizzaType;
 //
 //    private double cost;
 //
