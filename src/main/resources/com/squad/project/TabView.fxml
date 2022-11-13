@@ -8,7 +8,7 @@
             xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.squad.project.TabViewController">
     <children>
-        <TabPane layoutX="-2.0" prefHeight="800.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.squad.project.TabViewController">
+        <TabPane layoutX="-2.0" prefHeight="800.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
             <tabs>
                 <Tab fx:id="studentTab" text="Student Tab">
                     <!-- <fx:include fx:id="StudentTab" source="studentTab/StudentTab.fxml"/> -->
