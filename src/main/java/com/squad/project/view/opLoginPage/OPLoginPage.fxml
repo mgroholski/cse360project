@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.squad.project.view.opLoginPage.OPLoginPageController">
+   <children>
+      <TextField fx:id="opLogin" layoutX="200.0" layoutY="400.0" prefHeight="50.0" prefWidth="400.0" promptText="Order Processor Login">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </TextField>
+      <Label fx:id="loginPrompt" alignment="CENTER" contentDisplay="CENTER" layoutX="200.0" layoutY="325.0" prefHeight="50.0" prefWidth="400.0" text="Enter Login ID" textAlignment="CENTER">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Button fx:id="opLoginBtn" layoutX="325.0" layoutY="475.0" mnemonicParsing="false" onAction="#login" prefHeight="40.0" prefWidth="150.0" text="Login">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -49,6 +49,18 @@ public class StudentTabController implements Initializable{
     //bool createPizza(PizzaDTO pizza)
 
     long id = 1218442420;
+
+    //choose topping  
+    cheese.setOnAction(e -> pizzaType = "cheese");
+    pepperoni.setOnAction(e -> pizzaType = "pepperoni");
+    vegatable.setOnAction(e -> pizzaType = "vegatable");
+
+    //boolean isSelected1
+
+    //addPizza.setOnAction();
+
+
+
     StudentDTO matthew = new StudentDTO(id);
     //StudentDTO login(StudentDTO student)
     //If null bad login
