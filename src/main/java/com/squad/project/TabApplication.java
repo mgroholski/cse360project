@@ -1,6 +1,5 @@
 package com.squad.project;
 
-import com.squad.project.spring.SpringApp;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
@@ -8,6 +7,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import net.rgielen.fxweaver.core.FxWeaver;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -19,24 +19,24 @@ public class TabApplication extends Application{
     private ConfigurableApplicationContext applicationContext;
     @Override
     public void start(Stage primaryStage) throws Exception {
-        applicationContext.publishEvent(new StageReadyEvent(primaryStage));
-
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/squad/project/TabView.fxml")));
-
+        FxWeaver fxWeaver = applicationContext.getBean(FxWeaver.class);
+        Parent root = fxWeaver.loadView(TabViewController.class);
         Scene scene = new Scene(root);
         primaryStage.setTitle("Welcome to SunDevil Pizza");
         primaryStage.setScene(scene);
-        applicationContext.publishEvent(new StageReadyEvent(primaryStage));
+        primaryStage.show();
     }
 
     @Override
     public void init() {
-        applicationContext = new SpringApplicationBuilder(SpringApp.class).run();
+        String[] args = getParameters().getRaw().toArray(new String[0]);
+        this.applicationContext = new SpringApplicationBuilder().sources(RunApplication.class)
+                .run(args);;
     }
 
     @Override
     public void stop() {
-        applicationContext.close();
+        this.applicationContext.close();
         Platform.exit();
     }
 

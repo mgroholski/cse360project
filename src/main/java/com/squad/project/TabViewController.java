@@ -16,7 +16,12 @@ import com.squad.project.view.orderProcessorTab.OrderProcessorTabController;
 import com.squad.project.view.orderStatusTab.OrderStatusTabController;
 import com.squad.project.view.pizzaChefTab.PizzaChefTabController;
 import com.squad.project.view.studentTab.StudentTabController;
+import net.rgielen.fxweaver.core.FxmlView;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
 
+@Component
+@FxmlView("TabView.fxml")
 public class TabViewController implements Initializable {
     @FXML TabPane tabPane;
     @FXML Tab studentTab;
