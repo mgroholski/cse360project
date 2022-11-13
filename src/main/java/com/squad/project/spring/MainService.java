@@ -1,15 +1,37 @@
 package com.squad.project.spring;
 
+import com.squad.project.spring.DTO.OrderDTO;
+import com.squad.project.spring.DTO.PizzaDTO;
+import com.squad.project.spring.DTO.StudentDTO;
+
 import java.util.List;
 import java.util.Optional;
 
 @org.springframework.stereotype.Service
 public class MainService {
-    //TODO: Create order
-    //TODO: Update order
+    public OrderDTO createOrder(OrderDTO order) {
+        //TODO
+        return order;
+    }
 
-    //TODO: Create user
-    //TODO: Login user
+    public OrderDTO updateOrder(OrderDTO order) {
+        //TODO
+        return order;
+    }
 
-    //TODO: Create pizza
+    public StudentDTO createStudent(StudentDTO student) {
+        //TODO
+        return student;
+    }
+
+    //Returns null if invalid login, else returns the Student data
+    public StudentDTO login(StudentDTO student) {
+        //TODO
+        return student;
+    }
+
+    public PizzaDTO createPizza(PizzaDTO pizza) {
+        //TODO
+        return pizza;
+    }
 }

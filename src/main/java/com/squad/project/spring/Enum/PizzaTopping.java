@@ -1,7 +1,7 @@
 package com.squad.project.spring.Enum;
 
 public enum PizzaTopping {
-    MUSHROOMS(0), ONIONS(1), OLIVES(2), XTRACHEESE(3);
+    MUSHROOMS(0), ONIONS(1), OLIVES(2), EXTRA_CHEESE(3);
 
     private final int value;
 

@@ -10,8 +10,11 @@ import com.squad.project.spring.Enum.PizzaType;
 import lombok.Data;
 
 import com.squad.project.spring.DTO.*;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+@Getter
+@Setter
 public class PizzaDTO {
 
     private Long id;

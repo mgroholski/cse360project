@@ -1,5 +1,7 @@
 package com.squad.project.view.studentTab;
 
+import com.squad.project.spring.Classes.Pizza;
+import com.squad.project.spring.MainService;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
@@ -13,9 +15,9 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import com.squad.project.spring.DTO.*;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class StudentTabController implements Initializable{
-
     @FXML private RadioButton cheese;
     @FXML private RadioButton vegetable;
     @FXML private RadioButton pepperoni;
@@ -28,11 +30,24 @@ public class StudentTabController implements Initializable{
     @FXML private Button placeOrder;
     @FXML private Button removePizza;
     @FXML private ListView studentPizzas;
+
+    private MainService mainService;
+
+    @Autowired
+    public StudentTabController(MainService mainService) {
+        this.mainService = mainService;
+    }
     
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
+//        //Creates pizza
+//        PizzaDTO newPizza = new PizzaDTO();
+//        //Add attributes
+//        mainService.createPizza(newPizza);
     }
+
+
+
 //
 //    public
 //    FXMLLoader loader = new FXMLLoader();
