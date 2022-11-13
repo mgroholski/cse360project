@@ -1,5 +1,6 @@
 package com.squad.project;
 
+import com.squad.project.spring.MainService;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -17,6 +18,7 @@ import com.squad.project.view.orderStatusTab.OrderStatusTabController;
 import com.squad.project.view.pizzaChefTab.PizzaChefTabController;
 import com.squad.project.view.studentTab.StudentTabController;
 import net.rgielen.fxweaver.core.FxmlView;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
@@ -32,6 +34,13 @@ public class TabViewController implements Initializable {
     @FXML OrderStatusTabController orderStatusTabController;
     @FXML OrderProcessorTabController orderProcessorTabController;
     @FXML PizzaChefTabController pizzaChefTabController;
+
+    private MainService mainService;
+
+    @Autowired
+    public TabViewController(MainService mainService) {
+        this.mainService = mainService;
+    }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
