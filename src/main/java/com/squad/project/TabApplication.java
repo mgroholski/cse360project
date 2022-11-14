@@ -34,7 +34,7 @@ public class TabApplication extends Application{
     public void start(Stage primaryStage) throws Exception {
         Scene scene = new Scene(rootNode);
         primaryStage.setTitle("Welcome to SunDevil Pizza");
-        primaryStage.setHeight(2000);
+        primaryStage.setHeight(1000);
         primaryStage.setScene(scene);
         primaryStage.show();
     }

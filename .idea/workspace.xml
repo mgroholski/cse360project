@@ -7,13 +7,6 @@
     <list default="true" id="5090ef63-2a19-4409-8075-7c1e1fa71375" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/TabApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/TabApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/TabViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/TabViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/DTO/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/DTO/OrderDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/view/orderProcessorTab/OrderProcessorTabController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/view/orderProcessorTab/OrderProcessorTabController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/view/pizzaChefTab/PizzaChefTabController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/view/pizzaChefTab/PizzaChefTabController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/squad/project/PizzaChefTab.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/squad/project/PizzaChefTab.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/squad/project/StudentTab.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/squad/project/StudentTab.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/squad/project/TabView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/squad/project/TabView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668404260818</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Final">
+      <created>1668406241934</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1668406241934</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +227,7 @@
     <MESSAGE value="Example" />
     <MESSAGE value="Creating functions" />
     <MESSAGE value="Functional" />
-    <option name="LAST_COMMIT_MESSAGE" value="Functional" />
+    <MESSAGE value="Final" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final" />
   </component>
 </project>
