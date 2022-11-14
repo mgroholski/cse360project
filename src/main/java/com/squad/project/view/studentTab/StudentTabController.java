@@ -38,7 +38,7 @@ import org.springframework.stereotype.Component;
 import javax.swing.*;
 
 @Component
-public class StudentTabController implements Initializable{
+public class StudentTabController implements Initializable {
     @FXML private RadioButton cheese;
     @FXML private RadioButton vegetable;
     @FXML private RadioButton pepperoni;
