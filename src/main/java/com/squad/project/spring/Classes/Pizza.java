@@ -17,7 +17,7 @@ public class Pizza{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ElementCollection(fetch = FetchType.LAZY)
+    @ElementCollection(fetch = FetchType.EAGER)
     private Collection<PizzaTopping> pizzaToppings;
 
     private PizzaType pizzaType;

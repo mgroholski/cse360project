@@ -6,25 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="5090ef63-2a19-4409-8075-7c1e1fa71375" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/RunApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/RunApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/TabApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/TabApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/TabViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/TabViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Classes/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Classes/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Classes/Pizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Classes/Pizza.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Classes/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Classes/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/DTO/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/DTO/OrderDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/DTO/PizzaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/DTO/PizzaDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/DTO/StudentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/DTO/StudentDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/MainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/MainService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Repositories/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Repositories/OrderRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/view/orderProcessorTab/OrderProcessorTabController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/view/orderProcessorTab/OrderProcessorTabController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/view/orderStatusTab/OrderStatusTabController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/view/orderStatusTab/OrderStatusTabController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/view/pizzaChefTab/PizzaChefTabController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/view/pizzaChefTab/PizzaChefTabController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/view/studentTab/StudentTabController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/view/studentTab/StudentTabController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/squad/project/OrderProcessorTab.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/squad/project/OrderProcessorTab.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/squad/project/PizzaChefTab.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/squad/project/PizzaChefTab.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/squad/project/StudentTab.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/squad/project/StudentTab.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/squad/project/TabView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/squad/project/TabView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

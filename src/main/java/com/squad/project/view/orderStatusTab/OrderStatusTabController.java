@@ -34,13 +34,14 @@ import org.springframework.stereotype.Component;
 import javax.swing.*;
 
 @Component
-public class OrderStatusTabController {
+public class OrderStatusTabController implements Initializable {
     @Autowired
     private MainService mainService;
 
     @FXML ListView<OrderDTO> allOrderList;
 
 
+    @Override
     public void initialize(URL location, ResourceBundle resources) {
         displayAllOrders();
     }

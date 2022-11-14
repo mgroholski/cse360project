@@ -34,22 +34,17 @@ import org.springframework.stereotype.Component;
 import javax.swing.*;
 
 @Component
-public class OrderProcessorTabController {
+public class OrderProcessorTabController implements Initializable {
     
     @FXML ListView<OrderDTO> acceptedList;
 
     @Autowired
     private MainService mainService;
 
-    private long id;
 
+    @Override
     public void initialize(URL location, ResourceBundle resources) {
-        //TODO: Get id
-        TextInputDialog inputId = new TextInputDialog("Enter your ID");
-        inputId.setContentText("ID: ");
-        inputId.setHeaderText("ID input");
 
-        displayAllReadyOrders();
     }
 
     public void displayAllReadyOrders() {
@@ -67,8 +62,11 @@ public class OrderProcessorTabController {
         if (o.getOrderStatus() == OrderStatus.ACCEPTED) {
             o.setOrderStatus(OrderStatus.READY_TO_COOK);
         }
-
         mainService.updateOrder(o);
+
+        ObservableList<OrderDTO> list = acceptedList.getItems();
+        list.remove(o);
+        acceptedList.setItems(list);
     }
 
 }

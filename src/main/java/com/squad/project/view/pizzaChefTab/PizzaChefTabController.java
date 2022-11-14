@@ -34,7 +34,7 @@ import org.springframework.stereotype.Component;
 import javax.swing.*;
 
 @Component
-public class PizzaChefTabController {
+public class PizzaChefTabController implements Initializable {
     
     @FXML ListView<OrderDTO> readyToCookList;
     @FXML ListView<OrderDTO> cookingList;
@@ -42,6 +42,7 @@ public class PizzaChefTabController {
     @Autowired
     private MainService mainService;
 
+    @Override
     public void initialize(URL location, ResourceBundle resources) {
         displayAllOrders(OrderStatus.READY_TO_COOK, readyToCookList);
         displayAllOrders(OrderStatus.COOKING, cookingList);

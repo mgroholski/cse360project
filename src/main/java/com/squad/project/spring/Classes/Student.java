@@ -19,7 +19,7 @@ public class Student{
 
     private UserRole userRole;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "pizza_order_id")
     private List<Order> pizzaOrders;
 

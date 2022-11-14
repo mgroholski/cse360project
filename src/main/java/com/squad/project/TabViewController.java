@@ -56,7 +56,6 @@ public class TabViewController implements Initializable {
     }
 
     public void loadStudentTab() {
-        System.out.println("studentT");
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/squad/project/StudentTab.fxml"));
             fxmlLoader.setControllerFactory(applicationContext::getBean);
@@ -68,7 +67,6 @@ public class TabViewController implements Initializable {
     }
 
     public void loadPizzaChefTab() {
-        System.out.println("pizzaC");
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/squad/project/PizzaChefTab.fxml"));
             fxmlLoader.setControllerFactory(applicationContext::getBean);
@@ -80,7 +78,6 @@ public class TabViewController implements Initializable {
     }
 
     public void loadOrderProcessorTab() {
-        System.out.println("orderP");
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/squad/project/OrderProcessorTab.fxml"));
             fxmlLoader.setControllerFactory(applicationContext::getBean);
@@ -92,7 +89,6 @@ public class TabViewController implements Initializable {
     }
 
     public void loadOrderStatusTab() {
-        System.out.println("orderS");
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/squad/project/OrderStatusTab.fxml"));
             fxmlLoader.setControllerFactory(applicationContext::getBean);
