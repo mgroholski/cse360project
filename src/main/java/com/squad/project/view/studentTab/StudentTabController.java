@@ -1,7 +1,10 @@
 package com.squad.project.view.studentTab;
 
 import com.squad.project.spring.Classes.Pizza;
+import com.squad.project.spring.Enum.PizzaTopping;
+import com.squad.project.spring.Enum.PizzaType;
 import com.squad.project.spring.MainService;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
@@ -12,11 +15,19 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import java.net.URL;
+import java.util.List;
 import java.util.ResourceBundle;
 
 import com.squad.project.spring.DTO.*;
+import javafx.stage.Stage;
+import net.rgielen.fxweaver.core.FxmlView;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+import javax.swing.*;
+
+@Component
+@FxmlView("StudentTab.fxml")
 public class StudentTabController implements Initializable{
     @FXML private RadioButton cheese;
     @FXML private RadioButton vegetable;
@@ -31,21 +42,64 @@ public class StudentTabController implements Initializable{
     @FXML private Button removePizza;
     @FXML private ListView studentPizzas;
 
-    private MainService mainService;
+    private List<PizzaDTO> inCart;
 
     @Autowired
-    public StudentTabController(MainService mainService) {
-        this.mainService = mainService;
+    private MainService mainService;
+
+    public StudentTabController() {
+        inCart = new ArrayList<>();
     }
     
     @Override
-    public void initialize(URL location, ResourceBundle resources) {
-//        //Creates pizza
-//        PizzaDTO newPizza = new PizzaDTO();
-//        //Add attributes
-//        mainService.createPizza(newPizza);
+    public void initialize(URL location, ResourceBundle resources) {}
+
+    @FXML
+    private void addPizza(ActionEvent event) {
+        event.consume();
+        double cost = 0;
+        PizzaDTO pizza = new PizzaDTO();
+        List<PizzaTopping> toppings = new ArrayList<>();
+
+        if (mushrooms.isSelected()) {
+            toppings.add(PizzaTopping.MUSHROOMS);
+            //TODO: Add cost
+        }
+        if (onions.isSelected()) {
+            toppings.add(PizzaTopping.ONIONS);
+            //TODO: Add cost
+        }
+        if (olives.isSelected()) {
+            toppings.add(PizzaTopping.OLIVES);
+            //TODO: Add cost
+        }
+        if (extraCheese.isSelected()) {
+            toppings.add(PizzaTopping.EXTRA_CHEESE);
+            //TODO: Add cost
+        }
+        pizza.setPizzaToppings(toppings);
+        if (cheese.isSelected()) {
+            pizza.setPizzaType(PizzaType.CHEESE);
+            //TODO: Add cost
+        } else if (vegetable.isSelected()) {
+            pizza.setPizzaType(PizzaType.VEGETABLE);
+            //TODO: Add cost
+        } else if (pepperoni.isSelected()) {
+            pizza.setPizzaType(PizzaType.PEPPERONI);
+            //TODO: Add cost
+        }
+
+        pizza.setCost(cost);
+        inCart.add(pizza);
+
+        //TODO: Display pizza on pizzas in cart
     }
 
+    @FXML
+    private void placeOrder(ActionEvent event) {
+        event.consume();
+        //TODO: Create pizza order
+    }
 
 
 //

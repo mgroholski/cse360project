@@ -11,10 +11,4 @@ import com.squad.project.spring.Classes.*;
 
 public interface PizzaRepository extends JpaRepository<Pizza, Long>
 {
-//    //@Query("SELECT p from PIZZA p where p.id = :id")
-//    Optional<Pizza> findById(Long id);
-//
-//
-//    @Query(value = "UPDATE PIZZA p SET p.type = :type, p.piztTops =  :piztTops, cost = :cost WHERE p.id = :id RETURNING *", nativeQuery = true)
-//    Optional<Pizza> updatePizza(@Param("type") String pizType, @Param("piztTops") String[] piztTops, @Param("cost") double cost);
 }

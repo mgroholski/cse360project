@@ -10,6 +10,7 @@ import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.Arrays;
 import java.util.Objects;
 import java.util.ResourceBundle;
 
@@ -17,6 +18,7 @@ import com.squad.project.view.orderProcessorTab.OrderProcessorTabController;
 import com.squad.project.view.orderStatusTab.OrderStatusTabController;
 import com.squad.project.view.pizzaChefTab.PizzaChefTabController;
 import com.squad.project.view.studentTab.StudentTabController;
+import net.rgielen.fxweaver.core.FxWeaver;
 import net.rgielen.fxweaver.core.FxmlView;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -38,51 +40,38 @@ public class TabViewController implements Initializable {
     private MainService mainService;
 
     @Autowired
-    public TabViewController(MainService mainService) {
+    public TabViewController(MainService mainService, FxWeaver fxWeaver) {
         this.mainService = mainService;
     }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        
-        FXMLLoader loader = new FXMLLoader();
         try {
             AnchorPane studentPane = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/squad/project/StudentTab.fxml")));
             studentTab.setContent(studentPane);
-        }
-        catch (IOException e) {
-            System.out.println(e);
-            System.out.println("File not found");
+        } catch(IOException e) {
+            e.printStackTrace();
         }
 
-        loader = new FXMLLoader();
         try {
-            AnchorPane orderStatusPane = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/squad/project/StudentTab.fxml")));
-            orderStatusTab.setContent(orderStatusPane);
-        }
-        catch (IOException e) {
-            System.out.println(e);
-            System.out.println("File not found");
-        }
-
-        loader = new FXMLLoader();
-        try {
-            AnchorPane orderProcessorPane = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/squad/project/StudentTab.fxml")));
-            orderProcessorTab.setContent(orderProcessorPane);
-        }
-        catch (IOException e) {
-            System.out.println(e);
-            System.out.println("File not found");
-        }
-
-        loader = new FXMLLoader();
-        try {
-            AnchorPane pizzaChefPane = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/squad/project/StudentTab.fxml")));
+            AnchorPane pizzaChefPane = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/squad/project/PizzaChefTab.fxml")));
             pizzaChefTab.setContent(pizzaChefPane);
+        } catch(IOException e) {
+            e.printStackTrace();
         }
-        catch (IOException e) {
-            System.out.println(e);
-            System.out.println("File not found");
+
+        try {
+            AnchorPane pane = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/squad/project/OrderProcessorTab.fxml")));
+            orderProcessorTab.setContent(pane);
+        } catch(IOException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            AnchorPane pane = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/squad/project/OrderStatusTab.fxml")));
+            orderStatusTab.setContent(pane);
+        } catch(IOException e) {
+            e.printStackTrace();
         }
     }
 }

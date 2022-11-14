@@ -8,7 +8,9 @@ import com.squad.project.spring.Classes.Order;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
 import javafx.scene.input.MouseEvent;
+import net.rgielen.fxweaver.core.FxmlView;
 
+@FxmlView("OrderProcessorTab.fxml")
 public class OrderProcessorTabController {
     
     @FXML ListView<Order> acceptedList;

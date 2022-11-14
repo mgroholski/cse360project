@@ -66,7 +66,7 @@
             <Font size="30.0" />
          </font>
       </CheckBox>
-      <Button fx:id="addPizza" layoutX="125.0" layoutY="649.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Add Pizza">
+      <Button fx:id="addPizza" layoutX="125.0" layoutY="649.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Add Pizza" onAction="#addPizza">
          <font>
             <Font size="24.0" />
          </font>

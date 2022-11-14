@@ -11,7 +11,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import net.rgielen.fxweaver.core.FxmlView;
 
+@FxmlView("PCLoginPage.fxml")
 public class PCLoginPageController {
     @FXML TextField pcLogin;
     @FXML Label loginPrompt;

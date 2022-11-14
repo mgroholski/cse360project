@@ -5,7 +5,9 @@ import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
+import net.rgielen.fxweaver.core.FxmlView;
 
+@FxmlView("PizzaChefTab.fxml")
 public class PizzaChefTabController {
     
     @FXML ListView readyToCookList;
