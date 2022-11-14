@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.util.Collection;
 import java.util.Objects;
 import java.util.List;
+import java.text.DecimalFormat;
 
 import com.squad.project.spring.Enum.PizzaTopping;
 import com.squad.project.spring.Enum.PizzaType;
@@ -35,6 +36,7 @@ public class PizzaDTO {
 
     @Override
     public String toString() {
-        return "PizzaDTO{" + "id=" + this.id + ", " + "pizzaToppings=" + this.pizzaToppings.toString() + ", " + "pizzaType=" + this.pizzaType + ", " + "cost=" + this.cost +"}";
+        DecimalFormat d = new DecimalFormat("0.00");
+        return "Pizza {Toppings: " + this.pizzaToppings.toString() + ", " + "type: " + this.pizzaType + ", " + "cost: $" + d.format(this.cost) +"}";
     }
 }

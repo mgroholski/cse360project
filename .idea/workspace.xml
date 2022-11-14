@@ -7,18 +7,24 @@
     <list default="true" id="5090ef63-2a19-4409-8075-7c1e1fa71375" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/RunApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/RunApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/TabApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/TabApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/TabViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/TabViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Classes/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Classes/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Classes/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Classes/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/DTO/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/DTO/OrderDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/DTO/PizzaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/DTO/PizzaDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/DTO/StudentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/DTO/StudentDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/MainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/MainService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Repositories/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Repositories/OrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Repositories/PizzaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Repositories/PizzaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Repositories/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/spring/Repositories/StudentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/view/opLoginPage/OPLoginPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/view/opLoginPage/OPLoginPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/view/orderProcessorTab/OrderProcessorTabController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/view/orderProcessorTab/OrderProcessorTabController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/view/orderStatusTab/OrderStatusTabController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/view/orderStatusTab/OrderStatusTabController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/view/pcLoginPage/PCLoginPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/view/pcLoginPage/PCLoginPageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/view/pizzaChefTab/PizzaChefTabController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/view/pizzaChefTab/PizzaChefTabController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/squad/project/view/studentTab/StudentTabController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/squad/project/view/studentTab/StudentTabController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/squad/project/OrderProcessorTab.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/squad/project/OrderProcessorTab.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/squad/project/PizzaChefTab.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/squad/project/PizzaChefTab.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/squad/project/StudentTab.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/squad/project/StudentTab.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/squad/project/TabView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/squad/project/TabView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +34,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -104,19 +110,35 @@
   </component>
   <component name="RunManager" selected="Spring Boot.RunApplication">
     <configuration name="RunApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
       <module name="cse360project" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.squad.project.RunApplication" />
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="TabApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
       <module name="cse360project" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.squad.project.spring.SpringApp" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.squad.project.TabApplication" />
+      <extension name="software.aws.toolkits.jetbrains.core.execution.JavaAwsConnectionExtension">
+        <option name="credential" />
+        <option name="region" />
+        <option name="useCurrentConnection" value="false" />
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.RunApplication" />
+      <item itemvalue="Spring Boot.TabApplication" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -128,7 +150,7 @@
       <updated>1666581205768</updated>
       <workItem from="1666581208511" duration="2000" />
       <workItem from="1668309064274" duration="6880000" />
-      <workItem from="1668359893193" duration="14444000" />
+      <workItem from="1668359893193" duration="27922000" />
     </task>
     <task id="LOCAL-00001" summary="Remade classes">
       <created>1668366100291</created>
@@ -165,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668379145220</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Creating functions">
+      <created>1668385431520</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668385431520</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +229,7 @@
     <MESSAGE value="Connected Tab View Controller" />
     <MESSAGE value="Connected Tab View Controller pt2" />
     <MESSAGE value="Example" />
-    <option name="LAST_COMMIT_MESSAGE" value="Example" />
+    <MESSAGE value="Creating functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating functions" />
   </component>
 </project>

@@ -1,6 +1,9 @@
 package com.squad.project;
 
+import com.squad.project.spring.DTO.OrderDTO;
 import com.squad.project.spring.MainService;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -21,11 +24,11 @@ import com.squad.project.view.studentTab.StudentTabController;
 import net.rgielen.fxweaver.core.FxWeaver;
 import net.rgielen.fxweaver.core.FxmlView;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 @Component
-@FxmlView("TabView.fxml")
 public class TabViewController implements Initializable {
     @FXML TabPane tabPane;
     @FXML Tab studentTab;
@@ -39,36 +42,61 @@ public class TabViewController implements Initializable {
 
     private MainService mainService;
 
+    private ConfigurableApplicationContext applicationContext;
+
     @Autowired
-    public TabViewController(MainService mainService, FxWeaver fxWeaver) {
+    public TabViewController(MainService mainService, ConfigurableApplicationContext applicationContext) {
         this.mainService = mainService;
+        this.applicationContext = applicationContext;
     }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        loadStudentTab();
+    }
+
+    public void loadStudentTab() {
+        System.out.println("studentT");
         try {
-            AnchorPane studentPane = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/squad/project/StudentTab.fxml")));
-            studentTab.setContent(studentPane);
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/squad/project/StudentTab.fxml"));
+            fxmlLoader.setControllerFactory(applicationContext::getBean);
+            AnchorPane pane = fxmlLoader.load();
+            studentTab.setContent(pane);
         } catch(IOException e) {
             e.printStackTrace();
         }
+    }
 
+    public void loadPizzaChefTab() {
+        System.out.println("pizzaC");
         try {
-            AnchorPane pizzaChefPane = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/squad/project/PizzaChefTab.fxml")));
-            pizzaChefTab.setContent(pizzaChefPane);
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/squad/project/PizzaChefTab.fxml"));
+            fxmlLoader.setControllerFactory(applicationContext::getBean);
+            AnchorPane pane = fxmlLoader.load();
+            pizzaChefTab.setContent(pane);
         } catch(IOException e) {
             e.printStackTrace();
         }
+    }
 
+    public void loadOrderProcessorTab() {
+        System.out.println("orderP");
         try {
-            AnchorPane pane = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/squad/project/OrderProcessorTab.fxml")));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/squad/project/OrderProcessorTab.fxml"));
+            fxmlLoader.setControllerFactory(applicationContext::getBean);
+            AnchorPane pane = fxmlLoader.load();
             orderProcessorTab.setContent(pane);
         } catch(IOException e) {
             e.printStackTrace();
         }
+    }
 
+    public void loadOrderStatusTab() {
+        System.out.println("orderS");
         try {
-            AnchorPane pane = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/squad/project/OrderStatusTab.fxml")));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/squad/project/OrderStatusTab.fxml"));
+            fxmlLoader.setControllerFactory(applicationContext::getBean);
+            AnchorPane pane = fxmlLoader.load();
             orderStatusTab.setContent(pane);
         } catch(IOException e) {
             e.printStackTrace();

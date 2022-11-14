@@ -13,12 +13,13 @@ import lombok.Setter;
 @Setter
 public class Student{
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    private Long studentId;
 
     private UserRole userRole;
 
-    @OneToMany()
+    @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "pizza_order_id")
     private List<Order> pizzaOrders;
 

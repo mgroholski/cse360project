@@ -10,12 +10,12 @@
    <children>
       <ListView fx:id="readyToCookList" layoutX="25.0" layoutY="25.0" prefHeight="300.0" prefWidth="750.0" />
       <ListView fx:id="cookingList" layoutX="25.0" layoutY="425.0" prefHeight="300.0" prefWidth="750.0" />
-      <Button fx:id="cookBtn" alignment="CENTER" layoutX="150.0" layoutY="340.0" mnemonicParsing="false" onAction="#updateCooking" prefHeight="50.0" prefWidth="500.0" text="Change status to COOKING">
+      <Button fx:id="cookBtn" alignment="CENTER" layoutX="150.0" layoutY="340.0" mnemonicParsing="false"  prefHeight="50.0" prefWidth="500.0" text="Change status to COOKING" onAction="#changeStatusToCooking">
          <font>
             <Font size="30.0" />
          </font>
       </Button>
-      <Button fx:id="readyBtn" alignment="CENTER" layoutX="150.0" layoutY="740.0" mnemonicParsing="false" onAction="#updateReady" prefHeight="50.0" prefWidth="500.0" text="Change status to READY">
+      <Button fx:id="readyBtn" alignment="CENTER" layoutX="150.0" layoutY="640.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="500.0" text="Change status to READY" onAction="#changeStatusToFinished">
          <font>
             <Font size="30.0" />
          </font>

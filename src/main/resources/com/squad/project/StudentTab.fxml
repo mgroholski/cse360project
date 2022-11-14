@@ -24,7 +24,7 @@
       </Label>
       <RadioButton fx:id="cheese" layoutX="111.0" layoutY="180.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="200.0" text="Cheese">
          <toggleGroup>
-            <ToggleGroup fx:id="pizzaType" />
+            <ToggleGroup fx:id = "pizzaType" />
          </toggleGroup>
          <font>
             <Font size="30.0" />
@@ -32,7 +32,7 @@
       </RadioButton>
       <RadioButton fx:id="vegetable" layoutX="111.0" layoutY="230.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="200.0" text="Vegetable">
          <toggleGroup>
-            <ToggleGroup fx:id="pizzaType" />
+            <fx:reference source="pizzaType" />
          </toggleGroup>
          <font>
             <Font size="30.0" />
@@ -40,7 +40,7 @@
       </RadioButton>
       <RadioButton fx:id="pepperoni" layoutX="111.0" layoutY="280.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="200.0" text="Pepperoni">
          <toggleGroup>
-            <ToggleGroup fx:id="pizzaType" />
+            <fx:reference source="pizzaType" />
          </toggleGroup>
          <font>
             <Font size="30.0" />
@@ -71,7 +71,7 @@
             <Font size="24.0" />
          </font>
       </Button>
-      <Button fx:id="placeOrder" layoutX="500.0" layoutY="650.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Place Order">
+      <Button fx:id="placeOrder" layoutX="500.0" layoutY="650.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Place Order" onAction="#placeOrder">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
@@ -81,7 +81,7 @@
             <Font size="30.0" />
          </font>
       </Label>
-      <Button fx:id="removePizza" layoutX="500.0" layoutY="575.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Remove Pizza">
+      <Button fx:id="removePizza" layoutX="500.0" layoutY="575.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Remove Pizza" onAction="#removePizza">
          <font>
             <Font size="24.0" />
          </font>

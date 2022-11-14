@@ -13,11 +13,11 @@ import com.squad.project.spring.DTO.*;
 @Data
 public class OrderDTO{
     private Long id;
-    private List<Pizza> pizzas;
+    private List<PizzaDTO> pizzas;
     private OrderStatus orderStatus;
     private Double cost;
 
-    public OrderDTO(List<Pizza> pizzas, OrderStatus status, Double cost) {
+    public OrderDTO(List<PizzaDTO> pizzas, OrderStatus status, Double cost) {
         this.pizzas = pizzas;
         this.orderStatus = status;
         this.cost = cost;
@@ -27,6 +27,6 @@ public class OrderDTO{
 
     @Override
     public String toString() {
-        return "OrderDTO{" + "id=" + this.id + ", " + "pizzas=" + this.pizzas.toString() + ", " + "status=" + this.orderStatus + ", " + "cost=" + this.cost +  "}";
+        return "Order: {pizzas: " + this.pizzas.toString() + ", " + "status: " + this.orderStatus + ", " + "cost: $" + this.cost +  "}";
     }
 }

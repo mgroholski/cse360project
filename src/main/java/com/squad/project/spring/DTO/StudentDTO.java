@@ -21,12 +21,16 @@ public class StudentDTO{
         this.pizzaOrders = orders;
     }
 
+    public StudentDTO(Long id) {
+        this.id = id;
+    }
+
     public StudentDTO() {
 
     }
 
     @Override
     public String toString() {
-        return "StudentDTO{" + "id=" + this.id + ", " + "role=" + this.userRole + ", " + "orders=" + this.pizzaOrders.toString() + "}";
+        return "Student info: {id: " + this.id + ", " + "role: " + this.userRole + ", " + "order(s): " + this.pizzaOrders.toString() + "} ";
     }
 }

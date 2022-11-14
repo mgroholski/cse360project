@@ -14,7 +14,7 @@ public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @OneToMany()
+    @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "pizza_ids")
     private List<Pizza> pizzas;
 

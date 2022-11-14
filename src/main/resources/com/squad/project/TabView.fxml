@@ -4,22 +4,22 @@
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1"
+<AnchorPane prefHeight="1000.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1"
             xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="com.squad.project.TabViewController">
     <children>
         <TabPane layoutX="-2.0" prefHeight="800.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
             <tabs>
-                <Tab fx:id="studentTab" text="Student Tab">
+                <Tab fx:id="studentTab" text="Student Tab" onSelectionChanged="#loadStudentTab">
                     <!-- <fx:include fx:id="StudentTab" source="studentTab/StudentTab.fxml"/> -->
                 </Tab>
-                <Tab fx:id="orderStatusTab" text="Order Status Tab">
+                <Tab fx:id="orderStatusTab" text="Order Status Tab" onSelectionChanged="#loadOrderStatusTab">
                     <!-- <fx:include fx:id="OrderStatusTab" source="orderStatusTab/OrderStatusTab.fxml"/> -->
                 </Tab>
-                <Tab fx:id="orderProcessorTab" text="Order Processor Tab">
+                <Tab fx:id="orderProcessorTab" text="Order Processor Tab" onSelectionChanged="#loadOrderProcessorTab">
                     <!-- <fx:include fx:id="OrderStatusTab" source="orderStatusTab/OrderStatusTab.fxml"/> -->
                 </Tab>
-                <Tab fx:id="pizzaChefTab" text="Pizza Chef Tab">
+                <Tab fx:id="pizzaChefTab" text="Pizza Chef Tab" onSelectionChanged="#loadPizzaChefTab">
                     <!-- <fx:include fx:id="PizzaChefTab" source="pizzaChefTab/PizzaChefTab.fxml"/> -->
                 </Tab>
             </tabs>
