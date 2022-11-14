@@ -56,7 +56,6 @@ public class OrderProcessorTabController implements Initializable {
         acceptedList.setItems(list);
     }
 
-    @FXML
     public void changeStatusToAccepted() {
         OrderDTO o = acceptedList.getSelectionModel().getSelectedItem();
         if (o.getOrderStatus() == OrderStatus.ACCEPTED) {
