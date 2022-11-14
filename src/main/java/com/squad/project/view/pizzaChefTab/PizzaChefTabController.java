@@ -73,9 +73,6 @@ public class PizzaChefTabController implements Initializable {
         cookingList.setItems(list);
     }
 
-    
-        //Clicks studentTab
-
         //Ready to cook
         //OrderDTO changeStatus(long orderId, String status)
         //status = "Ready"

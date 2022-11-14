@@ -44,7 +44,7 @@ public class OrderProcessorTabController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
+        displayAllReadyOrders();
     }
 
     public void displayAllReadyOrders() {

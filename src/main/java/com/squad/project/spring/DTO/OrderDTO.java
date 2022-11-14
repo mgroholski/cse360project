@@ -1,6 +1,7 @@
 package com.squad.project.spring.DTO;
 
 import javax.persistence.*;
+import java.text.DecimalFormat;
 import java.util.Objects;
 import java.util.List;
 
@@ -27,6 +28,7 @@ public class OrderDTO{
 
     @Override
     public String toString() {
-        return "Order: {pizzas: " + this.pizzas.toString() + ", " + "status: " + this.orderStatus + ", " + "cost: $" + this.cost +  "}";
+        DecimalFormat d = new DecimalFormat("0.00");
+        return "Order: {pizzas: " + this.pizzas.toString() + ", " + "status: " + this.orderStatus + ", " + "cost: $" + d.format(this.cost) +  "}";
     }
 }

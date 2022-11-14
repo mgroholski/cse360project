@@ -1,6 +1,8 @@
 package com.squad.project;
 
 import com.squad.project.spring.DTO.OrderDTO;
+import com.squad.project.spring.DTO.StudentDTO;
+import com.squad.project.spring.Enum.UserRole;
 import com.squad.project.spring.MainService;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -9,6 +11,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
+import javafx.scene.control.TextInputDialog;
 import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
@@ -35,10 +38,7 @@ public class TabViewController implements Initializable {
     @FXML Tab orderStatusTab;
     @FXML Tab orderProcessorTab;
     @FXML Tab pizzaChefTab;
-    @FXML StudentTabController studentTabController;
-    @FXML OrderStatusTabController orderStatusTabController;
-    @FXML OrderProcessorTabController orderProcessorTabController;
-    @FXML PizzaChefTabController pizzaChefTabController;
+
 
     private MainService mainService;
 
@@ -52,6 +52,11 @@ public class TabViewController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        //Creates chef
+        StudentDTO chef = new StudentDTO();
+        chef.setId((long) 1219178441);
+        chef.setUserRole(UserRole.Chef);
+        mainService.createStudent(chef);
         loadStudentTab();
     }
 
@@ -66,36 +71,74 @@ public class TabViewController implements Initializable {
         }
     }
 
-    public void loadPizzaChefTab() {
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/squad/project/PizzaChefTab.fxml"));
-            fxmlLoader.setControllerFactory(applicationContext::getBean);
-            AnchorPane pane = fxmlLoader.load();
-            pizzaChefTab.setContent(pane);
-        } catch(IOException e) {
-            e.printStackTrace();
+    public void loadPizzaChefTab() throws InterruptedException {
+        if(pizzaChefTab.isSelected()) {
+            boolean value = this.login();
+            if (!value)
+                return;
+            try {
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/squad/project/PizzaChefTab.fxml"));
+                fxmlLoader.setControllerFactory(applicationContext::getBean);
+                AnchorPane pane = fxmlLoader.load();
+                pizzaChefTab.setContent(pane);
+            } catch(IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
-    public void loadOrderProcessorTab() {
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/squad/project/OrderProcessorTab.fxml"));
-            fxmlLoader.setControllerFactory(applicationContext::getBean);
-            AnchorPane pane = fxmlLoader.load();
-            orderProcessorTab.setContent(pane);
-        } catch(IOException e) {
-            e.printStackTrace();
+    public void loadOrderProcessorTab() throws InterruptedException {
+        if (orderProcessorTab.isSelected()) {
+            System.out.println("Here2");
+            boolean value = this.login();
+            if (!value)
+                return;
+
+            try {
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/squad/project/OrderProcessorTab.fxml"));
+                fxmlLoader.setControllerFactory(applicationContext::getBean);
+                AnchorPane pane = fxmlLoader.load();
+                orderProcessorTab.setContent(pane);
+            } catch(IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
     public void loadOrderStatusTab() {
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/squad/project/OrderStatusTab.fxml"));
-            fxmlLoader.setControllerFactory(applicationContext::getBean);
-            AnchorPane pane = fxmlLoader.load();
-            orderStatusTab.setContent(pane);
-        } catch(IOException e) {
-            e.printStackTrace();
+        if (orderStatusTab.isSelected()) {
+            System.out.println("Here3");
+            try {
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/squad/project/OrderStatusTab.fxml"));
+                fxmlLoader.setControllerFactory(applicationContext::getBean);
+                AnchorPane pane = fxmlLoader.load();
+                orderStatusTab.setContent(pane);
+            } catch(IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    private Boolean login() throws InterruptedException {
+        while (true) {
+            TextInputDialog inputId = new TextInputDialog("Enter student ID");
+            inputId.setContentText("ID: ");
+            inputId.setHeaderText("Input ID here");
+
+            inputId.showAndWait();
+            String inp = inputId.getEditor().getText();
+            if(inp.length() != 10) {
+                inputId.setContentText("Invalid ID, must be 10 digits long and be a number.");
+                wait(100);
+                continue;
+            }
+
+            Long id = Long.parseLong(inp);
+            StudentDTO student = new StudentDTO(id);
+            student = mainService.login(student);
+            if (student != null && student.getUserRole() == UserRole.Chef) {
+                return true;
+            }
         }
     }
 }
